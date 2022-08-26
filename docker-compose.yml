@@ -3,8 +3,8 @@ version: "3"
 services:
   db:
     image: postgres
-    volumes:
-      - ./data/db:/var/lib/postgresql/14/main
+#    volumes:
+#      - ./data/db:/var/lib/postgresql/14/main
     environment:
       - POSTGRES_DB=bank
       - POSTGRES_USER=kam1dere

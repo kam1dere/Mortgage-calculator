@@ -73,8 +73,9 @@ class BankApiList(ListAPIView):
             return queryset
 
     def get_serializer_context(self):
-        return {
-            'deposit': self.request.query_params['deposit'],
-            'first_payment': self.request.query_params['first_payment'],
-            'term': self.request.query_params['term'],
-        }
+        if self.request.query_params:
+            return {
+                'deposit': self.request.query_params['deposit'],
+                'first_payment': self.request.query_params['first_payment'],
+                'term': self.request.query_params['term'],
+            }
