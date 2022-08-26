@@ -7,7 +7,7 @@ router = routers.SimpleRouter()
 router.register(r'api', BankViewSet)
 urlpatterns = [
     path('', BankList.as_view(), name='bank_list'),
-    path('DRFList', BankApiList.as_view(), name='bank_list_drf')
+    path('DRFList/', BankApiList.as_view(), name='bank_list_drf')
 ]
 
 urlpatterns += router.urls
