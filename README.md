@@ -3,15 +3,15 @@
 
 # Установка и запуск
 + Склонировать репозиторий с Github
-'git clone git@github.com:kam1dere/Mortgage-calculator.git'
+`git clone git@github.com:kam1dere/Mortgage-calculator.git`
 + Перейти в директорию проекта
 + Запустить контейнеры
-'sudo docker-compose up -d'
+`sudo docker-compose up -d`
 + Остановка работы контейнеров
-'sudo docker-compose stop'
+`sudo docker-compose stop`
 
 # URL
-'http://0.0.0.0:8000/calculator/' - Ипотечный калькулятор без DRF на HTML
+`http://0.0.0.0:8000/calculator/` - Ипотечный калькулятор без DRF на HTML
 'http://0.0.0.0:8000/calculator/DRFList' - Ипотечный калькулятор с использованием DRF
 'http://0.0.0.0:8000/calculator/api/' - bank list + CRUD
 
