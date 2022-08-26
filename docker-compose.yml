@@ -4,14 +4,14 @@ services:
   db:
     image: postgres
 #    volumes:
-#      - ./data/db:/var/lib/postgresql/14/main
+#      - ./data/db2:/var/lib/postgresql/14/main
     environment:
       - POSTGRES_DB=bank
       - POSTGRES_USER=kam1dere
       - POSTGRES_PASSWORD=roiadmin
   web:
     build: .
-    command: bash -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    command: bash -c "python manage.py migrate && python manage.py loaddata testbd.json &&  python manage.py runserver 0.0.0.0:8000"
     volumes:
       - .:/code
     ports:
