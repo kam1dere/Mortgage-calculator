@@ -5,17 +5,17 @@
 # Установка и запуск
 
 + Склонировать репозиторий с Github
-+ 
+
 `git clone git@github.com:kam1dere/Mortgage-calculator.git`
 
 + Перейти в директорию проекта
-+ 
+
 + Запустить контейнеры
-+ 
+
 `sudo docker-compose up -d`
 
 + Остановка работы контейнеров
-+ 
+
 `sudo docker-compose stop`
 
 # URL
