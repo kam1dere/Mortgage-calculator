@@ -27,7 +27,7 @@
 
 `http://0.0.0.0:8000/calculator/DRFList` - Ипотечный калькулятор с использованием DRF
 
-`http://0.0.0.0:8000/calculator/api/` - bank list + CRUD
+`http://0.0.0.0:8000/calculator/api/ + ViewSets` - bank list + CRUD
 
 ____
 Логин - `kam1dere`
