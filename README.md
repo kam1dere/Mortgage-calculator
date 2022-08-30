@@ -15,8 +15,11 @@
 
 + Перейти в директорию проекта
 
++ Сбилдить контейнер
+`docker-compose build`
+
 + Запустить контейнеры
-`sudo docker-compose up -d`
+`docker-compose up -d`
 
 + Остановка работы контейнеров
 `sudo docker-compose stop`
